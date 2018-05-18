@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { View, Text } from 'react-native';
 
 export default class Component1 extends Component {
   render() {
-    return this.props.children;
+    return (
+      <View>
+        {this.props.children}
+        <Text>{this.props.children}</Text>
+      </View>
+    );
   }
 }
 
 export class Component2 extends Component {
   render() {
-    return <Text>Component 2</Text>;
+    return <Text>{this.props.value}</Text>;
   }
 }

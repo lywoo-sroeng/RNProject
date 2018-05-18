@@ -13,10 +13,13 @@ export default class App extends Component {
     return (
       <View style={styles.container}>
         <HelloWorld/>
-        <Component1>
+
+        {/* 'children' prop works unless there is no child component */}
+        <Component1 children='child component text'>
           <Text>Child Component</Text>
         </Component1>
-        <Component2/>
+
+        <Component2 value='This is component 2'/>
       </View>
     );
   }
