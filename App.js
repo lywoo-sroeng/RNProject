@@ -5,13 +5,15 @@ import {
   View
 } from 'react-native';
 
+import MyFlatList from './MyFlatList';
+import MySectionList from './MySectionList';
+
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          Hello World!
-        </Text>
+        {/* <MyFlatList/> */}
+        <MySectionList/>
       </View>
     );
   }
@@ -20,8 +22,8 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: '#F5FCFF',
+    margin: 5,
+    paddingTop: 30
   }
 });
