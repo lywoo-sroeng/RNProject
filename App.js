@@ -5,13 +5,15 @@ import {
   View
 } from 'react-native';
 
+import Calculator from './Calculator';
+import Counter from './Counter';
+
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
-          Hello World!
-        </Text>
+        {/* <Counter/> */}
+        <Calculator/>
       </View>
     );
   }
