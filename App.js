@@ -7,13 +7,15 @@ import {
 
 import Calculator from './Calculator';
 import Counter from './Counter';
+import Counter2 from './Counter2';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         {/* <Counter/> */}
-        <Calculator/>
+        {/* <Calculator/> */}
+        <Counter2 value='10'/>
       </View>
     );
   }
