@@ -10,7 +10,13 @@ export default class Counter2 extends Component {
   }
 
   add = () => {
-    this.setState({ counter: this.state.counter + (2 * this.props.value) });
+    const { counter } = this.state;
+
+    if(counter == 0) {
+      this.setState({ counter: this.props.value });
+    } else {
+      this.setState({ counter: 2 * counter });
+    }
   }
 
   render() {

@@ -15,7 +15,7 @@ export default class App extends Component {
       <View style={styles.container}>
         {/* <Counter/> */}
         {/* <Calculator/> */}
-        <Counter2 value='10'/>
+        <Counter2 value={10}/>
       </View>
     );
   }
