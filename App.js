@@ -4,7 +4,6 @@ import { View, StyleSheet } from 'react-native';
 import LayoutOne from './LayoutOne';
 import LayoutTwo from './LayoutTwo';
 import LayoutThree from './LayoutThree';
-import LayoutFour from './LayoutFour';
 
 export default class App extends Component {
   render() {
